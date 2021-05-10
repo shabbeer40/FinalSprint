@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="73.203937">
+    <testcase classname="Download App From PlayStore and AppStore" name="User able to download the app from Playstore" time="73.203937">
+        <system-out><![CDATA[Given User on the Mcdonalds Page............................................passed
+Then User clicks on the Playstore icon and New window should be open, User will download the app from Playstore.passed
+]]></system-out>
+    </testcase>
+</testsuite>

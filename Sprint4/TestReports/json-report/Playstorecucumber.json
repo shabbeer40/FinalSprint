@@ -1,0 +1,52 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "User able to download the app from Playstore",
+        "description": "",
+        "id": "download-app-from-playstore-and-appstore;user-able-to-download-the-app-from-playstore",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 40951559300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User on the Mcdonalds Page",
+            "match": {
+              "location": "PlaystoreSD.user_logs_into_his_account()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 32252377900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks on the Playstore icon and New window should be open, User will download the app from Playstore",
+            "match": {
+              "location": "PlaystoreSD.user_clicks_on_the_Playstore_icon()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Playstore"
+          }
+        ]
+      }
+    ],
+    "name": "Download App From PlayStore and AppStore",
+    "description": "",
+    "id": "download-app-from-playstore-and-appstore",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Feature/Appstore.feature"
+  }
+]

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="161.863178">
+    <testcase classname="Payment option Test" name="Payment Action" time="161.863178">
+        <system-out><![CDATA[Given User on the Home page.................................................passed
+When User clicks Cart button................................................passed
+And User clicks on Pay button...............................................passed
+Then Payment Page must be visible...........................................passed
+When User clicks on the Wallets.............................................passed
+Then User should be able to pay using one of the Wallets....................passed
+When User clicks on the Food Card...........................................passed
+Then User should be able to pay using Card..................................passed
+When User clicks on the Credit or Debit Cards...............................passed
+Then User Should be able to pay using Credit or Debit Cards after entering the card details.passed
+When User clicks on the Net Banking.........................................passed
+Then User selects the bank by which user want to pay amount.................passed
+When User clicks on the more................................................passed
+Then User clicks on the Cash On Delivery Option and will place the order....passed
+]]></system-out>
+    </testcase>
+</testsuite>
