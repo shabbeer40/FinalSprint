@@ -63,11 +63,6 @@ public class PaymentPageSD {
         String Expected2="Paytm UPI";
         Assert.assertEquals(Expected2, actual2.getText());
         driver.findElement(By.xpath("//*[contains(text(),'Paytm UPI')]")).isDisplayed();
-        //Thread.sleep(5000);
-        //WebElement actual3=driver.findElement(By.xpath("//span[contains(text(),'Phonepe UPI')]"));
-        //String Expected3="Phonepe UPI";
-        //Assert.assertEquals(Expected3, actual3.getText());
-        //driver.findElement(By.xpath("//*[contains(text(),'Phonepe UPI')]")).isDisplayed();
         
    }
    @Test(priority=5)

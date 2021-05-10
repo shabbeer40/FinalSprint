@@ -47,7 +47,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>May 10, 2021 12:36:06 PM</span>
+                    <span class='label suite-start-time blue darken-3'>May 10, 2021 06:47:14 PM</span>
 				</a>
 			</li>
 			<li>
@@ -174,12 +174,12 @@
 				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Defect Test</span>
-						<span class='test-time'>May 10, 2021 12:36:06 PM</span>
+						<span class='test-time'>May 10, 2021 06:47:14 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='scenario node' test-id='2' status='fail'>
-	<span class='duration right label'>0h 2m 14s+675ms</span>
+	<span class='duration right label'>0h 2m 38s+519ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">Payment</span>
@@ -221,7 +221,7 @@
 			
 			<b>When</b>
 			
-			<span class="bdd-step-name">When User click on UPI</span>
+			<span class="bdd-step-name">When User click on cards</span>
 				<div class='pre'>passed</div>
 			
 		</li>
@@ -229,33 +229,15 @@
 			
 			<b>Then</b>
 			
-			<span class="bdd-step-name">Then Different Options in UPI should visible</span>
-				<div class='pre'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(text(),'Phonepe UPI')]"}
-  (Session info: chrome=90.0.4430.93)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-IUDNIR4', ip: '192.168.43.165', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51686}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: c046d64bfac9a89163b522251dac5c88
-*** Element info: {Using=xpath, value=//span[contains(text(),'Phonepe UPI')]}
-	at jdk.internal.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at stepDefinition.DefectSD.different_Options_in_UPI_should_visible(DefectSD.java:74)
-	at ?.Then Different Options in UPI should visible(src/test/resources/Feature/Defect.feature:9)
-</pre></div>
+			<span class="bdd-step-name">Then User enters the card data</span>
+				<div class='pre'><textarea>java.lang.AssertionError: expected:<false> but was:<true>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:120)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at stepDefinition.DefectSD.user_enters_the_card_data(DefectSD.java:85)
+	at ?.Then User enters the card data(src/test/resources/Feature/Defect.feature:9)
+</textarea></div>
 			
 		</li>
 	</ul>
@@ -315,7 +297,7 @@ Session ID: c046d64bfac9a89163b522251dac5c88
 
                         <li class='exception displayed active'>
                             <div class='exception-heading'>
-                                <span class='exception-name'>org.openqa.selenium.NoSuchElementException</span>
+                                <span class='exception-name'>java.lang.AssertionError</span>
                                 <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
                             </div>
                             <div class='exception-content hide'>
@@ -330,34 +312,16 @@ Session ID: c046d64bfac9a89163b522251dac5c88
                                         </thead>
                                         <tbody>
                                                     <tr>
-                                                        <td>May 10, 2021 12:38:16 PM</td>
-                                                        <td class='linked' test-id='8'>Defect Test.Payment.Then Different Options in UPI should visible</td>
-                                                        <td><pre><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(text(),'Phonepe UPI')]"}
-  (Session info: chrome=90.0.4430.93)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-IUDNIR4', ip: '192.168.43.165', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51686}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: c046d64bfac9a89163b522251dac5c88
-*** Element info: {Using=xpath, value=//span[contains(text(),'Phonepe UPI')]}
-	at jdk.internal.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at stepDefinition.DefectSD.different_Options_in_UPI_should_visible(DefectSD.java:74)
-	at ?.Then Different Options in UPI should visible(src/test/resources/Feature/Defect.feature:9)
-</pre></pre></td>
+                                                        <td>May 10, 2021 06:49:39 PM</td>
+                                                        <td class='linked' test-id='8'>Defect Test.Payment.Then User enters the card data</td>
+                                                        <td><pre><textarea>java.lang.AssertionError: expected:<false> but was:<true>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:120)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at stepDefinition.DefectSD.user_enters_the_card_data(DefectSD.java:85)
+	at ?.Then User enters the card data(src/test/resources/Feature/Defect.feature:9)
+</textarea></pre></td>
                                                     </tr>
                                         </tbody>
                                     </table>
@@ -401,19 +365,19 @@ Session ID: c046d64bfac9a89163b522251dac5c88
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>May 10, 2021 12:36:06 PM</div>
+					<div class='panel-lead'>May 10, 2021 06:47:14 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>May 10, 2021 12:38:21 PM</div>
+			 		<div class='panel-lead'>May 10, 2021 06:49:53 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>135,461ms</div>
+					<div class='panel-lead'>158,990ms</div>
 				</div>
 			</div>
 		</div>

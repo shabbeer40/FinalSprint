@@ -54,28 +54,35 @@ public class DefectSD {
 		Assert.assertEquals(Expected, actual); 
 	}
 	@Test(priority=5)
-	@When("^User click on UPI$")
-	public void user_click_on_UPI() throws Throwable {
-		Thread.sleep(5000);
-		WebElement actual1=driver.findElement(By.xpath("//*[contains(text(),\" UPI \")]"));
-        String Expected1="UPI";
-        Assert.assertEquals(Expected1, actual1.getText());
-        driver.findElement(By.xpath("//*[contains(text(),\" UPI \")]")).isDisplayed();
-        Thread.sleep(5000); 
+	@When("^User click on cards$")
+	public void user_click_on_cards() throws Throwable {
+		Thread.sleep(3000);
+		WebElement actual=driver.findElement(By.xpath("//*[contains(text(),\" Credit/Debit Cards\")]"));
+		String Expected="Credit/Debit Cards";
+		Assert.assertEquals(Expected, actual.getText());
+		driver.findElement(By.xpath("//*[contains(text(),\" Credit/Debit Cards\")]")).click(); 
 	}
 	@Test(priority=6)
-	@Then("^Different Options in UPI should visible$")
-	public void different_Options_in_UPI_should_visible() throws Throwable {
-		WebElement actual2=driver.findElement(By.xpath("//span[contains(text(),'Paytm UPI')]"));
-        String Expected2="Paytm UPI";
-        Assert.assertEquals(Expected2, actual2.getText());
-        driver.findElement(By.xpath("//*[contains(text(),'Paytm UPI')]")).isDisplayed();
-        Thread.sleep(5000);
-        WebElement actual3=driver.findElement(By.xpath("//span[contains(text(),'Phonepe UPI')]"));
-        String Expected3="Phonepe UPI";
-        Assert.assertEquals(Expected3, actual3.getText());
-        driver.findElement(By.xpath("//*[contains(text(),'Phonepe UPI')]")).isDisplayed();
-        driver.close();
+	@Then("^User enters the card data$")
+	public void user_enters_the_card_data() throws Throwable {
+		Thread.sleep(3000);
+		WebElement actual=driver.findElement(By.xpath("//*[contains(text(),'Pay with Credit/Debit Card')]"));
+		String Expected="Pay with Credit/Debit Card";
+		Assert.assertEquals(Expected, actual.getText());
+		driver.findElement(By.xpath("//*[contains(text(),'Pay with Credit/Debit Card')]")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//input[@type='number']")).sendKeys("1234567893216547");
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//div[@class='new-card-expire input-conatiner']//input[@type='text']")).sendKeys("99/1999");
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//input[@type='password']")).sendKeys("200");
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//div[4]//input[1]")).sendKeys("shabbeer");
+		Thread.sleep(2000);
+		boolean Expected1=false;
+		WebElement continuebtn=driver.findElement(By.xpath("//button[contains(text(),'Continue')]"));
+		boolean Actual=continuebtn.isEnabled();
+		Assert.assertEquals(Expected1, Actual);
 	}
 
 }
